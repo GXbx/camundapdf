@@ -16,7 +16,7 @@ function demoFromHTML(namePDF) {
         width: '100%'
     };
     pdf.addImage(image, 'PNG', 500, 0, 100, 150);
-
+    pdf.save(namePDF+'.pdf');
     pdf.fromHTML(
     source, // HTML string or DOM elem ref.
     margins.left, // x coord
