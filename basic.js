@@ -22,10 +22,10 @@ function demoFromHTML(namePDF, divName) {
     source, // HTML string or DOM elem ref.
     margins.left, // x coord
     margins.top, { // y coord
-        'width': margins.width, // max width of content on PDF
+        'width': 140, // max width of content on PDF
         'elementHandlers': specialElementHandlers
-    },
 
+    },
     function (dispose) {
         pdf.save(namePDF+'.pdf');
     }, margins);
